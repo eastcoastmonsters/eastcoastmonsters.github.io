@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+        type="image/png"
+        href="favicon.png">
+    <title>East Coast Monsters</title>
+</head>
+<body>
+    
+    <!-- Logo -->
+    <!-- <img src="assets/logo/signature.png" alt="East Coast Monsters logo could not load." id="logo"> -->
+    <!-- <h3 id="eastcoastmonsters">East Coast<br> -->
+        <!-- <span id="monsters">Monsters</span></h3> -->
+
+    <!-- Signature -->
+    <img class="signature" src="assets/eastcoastmonsters.png">
+
+    <!-- Links -->
+    <div class="links">
+        <a href="https://open.spotify.com/artist/6MSqiVeK2ige9MCArYVqWX" class="links-items-odd">Spotify</a>
+        <!-- <a href="https://music.youtube.com/channel/UCDhgRj9d2rL90GQTww4tXRQ" class="links-items">YouTube Music</a> -->
+        <a href="https://music.apple.com/us/artist/east-coast-monsters/1572547274" class="links-items-even">Apple Music</a>
+        <a href="https://soundcloud.com/ecm-624002976" class="links-items-odd">SoundCloud</a>
+
+        <a href="https://www.instagram.com/east.coast.monsters/" class="links-items-even">Instagram</a>
+
+        <h3 class="links-headers">Monsters</h3>
+        <a href="https://truefact.me" class="links-items-even">True Fact</a>
+        <a href="https://www.instagram.com/underbyteblc/" class="links-items-odd">UnderByte</a>
+        <a href="https://www.instagram.com/hhanchy/" class="links-items-even">HHancho</a>
+        <a href="https://www.instagram.com/dutch_norris/" class="links-items-odd">Dutch Norris</a>
+        <a href="https://www.instagram.com/soizzy7/" class="links-items-even">So Izzy</a>
+        <a href="https://www.instagram.com/beatsbyniro/" class="links-items-odd">NIRO Beats</a>
+        <a href="https://www.instagram.com/kingkombo2.0/" class="links-items-even">Kombo</a>
+    </div>
+
+    <div class="bottom-text">
+        For business inquiries, please contact<br><a class="email" href="mailto:truefact@eastcoastmonsters.com">truefact@eastcoastmonsters.com</a>
+    </div>
+
+    <div class="sitesbysamchambers">
+        <a class="samchambers" href="https://github.com/SamChambers">sitesbysam</a>
+    </div>
+ 
+</body>
+
+<style>
+    @font-face {
+        font-family: 'OldeEnglish';
+        src: url(assets/fonts/name/VictorianText.ttf);
+    }
+    @font-face {
+        font-family: 'Links';
+        src: url(assets/fonts/links/sedgwick-ave-display.regular.ttf);
+    }
+
+    body {
+        /* background: rgb(36, 36, 36); */
+        background: radial-gradient(circle, rgb(77, 77, 77) 0%, rgb(65, 65, 65) 16%, rgb(48, 48, 48) 33%, rgb(31, 31, 31) 64%, rgb(0, 0, 0) 77%);
+        /* background: url("assets/background.png"); */
+        background-size: contain;
+        color: rgb(0, 0, 0);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    #logo {
+        /* border-radius: 50%; */
+        border: 1px solid rgba(24, 45, 161, 0.938);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        height: auto;
+        max-width: 175px;
+    }
+
+    #eastcoastmonsters {
+        font-family: 'OldeEnglish';
+        font-size: 50px;
+        font-weight: lighter;
+        color: blanchedalmond;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    } #monsters {
+        font-size: 75px;
+    }
+
+    .signature {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+        height: auto;
+        max-width: 500px;
+    }
+
+    .links {
+        padding-bottom: 25px;
+    } .links-headers {
+        font-family: 'OldeEnglish';
+        font-weight: lighter;
+        color: blanchedalmond;
+        font-size: 50px;
+        text-align: center;
+    } .links-items-odd {
+        display: block;
+        font-family: 'Links';
+        text-align: center;
+        font-size: 30px;
+        margin-top: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        border: 10px inset rgb(192, 192, 192);
+        /* border-image: url(assets/background-links.jpg) 30% round; */
+        transform: skewX(10deg);
+        width: 300px;
+        color: rgb(255, 255, 255);
+        transition: transform 1s;
+        text-decoration: none;
+        background: url(assets/background-links.jpg);
+        /* background: linear-gradient(90deg, rgba(101,206,59,0.75) 0%, rgba(41,113,13,1) 50%, rgba(101,206,59,0.75) 100%);   */
+    } .links-items-even {
+        display: block;
+        font-family: 'Links';
+        text-align: center;
+        font-size: 30px;
+        margin-top: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        border: 10px inset rgb(192, 192, 192);
+        transform: skewX(-10deg);
+        width: 300px;
+        color: rgb(255, 255, 255);
+        transition: transform 1s; 
+        text-decoration: none;
+        background: url(assets/background-links.jpg);
+        /* background: linear-gradient(90deg, rgba(101,206,59,0.75) 0%, rgba(41,113,13,1) 50%, rgba(101,206,59,0.75) 100%);   */
+    } .links-items-icon {
+        max-width: 25%;
+        max-height: 25%;
+    } .links-items-odd:hover, .links-items-even:hover {
+        color: rgb(218, 218, 218);
+        transform: skewX(0deg);
+    }
+
+    .socials {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 18px;
+        padding: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        border-width: 4px;
+        width: 290px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 40px;
+        color: rgb(39, 38, 38);
+        transition: color 250ms; 
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.68);
+    }   .socials:hover {
+        color: #000;
+        background: rgba(255, 255, 255, 0.623);
+    }
+
+    .bottom-text {
+        text-align: center;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        color: blanchedalmond;
+    } .email {
+        font-size: 20px;
+        font-weight: bold;
+        color: blanchedalmond;
+        text-decoration: none;
+    }
+
+    .sitesbysamchambers {
+        text-align: center;
+        padding-bottom: 15px;
+    }   .samchambers {
+        color: rgb(82, 82, 82);
+        text-decoration: underline;
+    }
+</style>
+
+</html>
