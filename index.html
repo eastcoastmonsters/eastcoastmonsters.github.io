@@ -8,12 +8,6 @@
     <title>East Coast Monsters</title>
 </head>
 <body>
-    
-    <!-- Logo -->
-    <!-- <img src="assets/logo/signature.png" alt="East Coast Monsters logo could not load." id="logo"> -->
-    <!-- <h3 id="eastcoastmonsters">East Coast<br> -->
-        <!-- <span id="monsters">Monsters</span></h3> -->
-
     <!-- Signature -->
     <img class="signature" src="assets/eastcoastmonsters.png">
 
@@ -26,7 +20,7 @@
 
         <a href="https://www.instagram.com/east.coast.monsters/" class="links-items-even">Instagram</a>
 
-        <h3 class="links-headers">Monsters</h3>
+        <img class="signature" src="assets/monsters.png">
         <a href="https://truefact.me" class="links-items-even">True Fact</a>
         <a href="https://www.instagram.com/underbyteblc/" class="links-items-odd">UnderByte</a>
         <a href="https://www.instagram.com/hhanchy/" class="links-items-even">HHancho</a>
@@ -37,7 +31,7 @@
     </div>
 
     <div class="bottom-text">
-        For business inquiries, please contact<br><a class="email" href="mailto:truefact@eastcoastmonsters.com">truefact@eastcoastmonsters.com</a>
+        For business inquiries, please contact<br><a class="email" href="mailto:ecmrap181@gmail.com">ecmrap181@gmail.com</a>
     </div>
 
     <div class="sitesbysamchambers">
@@ -48,12 +42,20 @@
 
 <style>
     @font-face {
-        font-family: 'OldeEnglish';
+        font-family: 'Headers';
         src: url(assets/fonts/name/VictorianText.ttf);
     }
     @font-face {
         font-family: 'Links';
         src: url(assets/fonts/links/sedgwick-ave-display.regular.ttf);
+    }
+    @font-face {
+        font-family: 'Bottom';
+        src: url(assets/fonts/name/Colchester.ttf);
+    }
+    @font-face {
+        font-family: 'Email';
+        src: url(assets/fonts/links/cmon-near.normal.ttf);
     }
 
     body {
@@ -90,7 +92,7 @@
     .links {
         padding-bottom: 25px;
     } .links-headers {
-        font-family: 'OldeEnglish';
+        font-family: 'Headers';
         font-weight: lighter;
         color: rgb(255, 255, 255);
         font-size: 50px;
@@ -160,15 +162,20 @@
     }
 
     .bottom-text {
+        font-size: 9px;
+        line-height: 2;
         text-align: center;
         padding-bottom: 20px;
         margin-top: 20px;
         color: rgb(255, 255, 255);
+        font-family: 'Email';
     } .email {
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 2;
         font-weight: bold;
         color: rgb(255, 255, 255);
         text-decoration: none;
+        font-family: 'Email';
     }
 
     .sitesbysamchambers {
