@@ -15,16 +15,18 @@
 
     <!-- Signature -->
     <img class="signature" src="assets/handwriting/1_eastcoastmonsters-blueweb-transparent.png">
-
+    <br>
     <!-- Links -->
     <div class="links">
-        <a href="https://open.spotify.com/artist/6MSqiVeK2ige9MCArYVqWX" class="links-items-odd">Spotify</a>
+        <div>
+            <a href="https://open.spotify.com/artist/6MSqiVeK2ige9MCArYVqWX" class="links-items-odd col-1 col-s-1">Spotify</a>
+        </div>
         <!-- <a href="https://music.youtube.com/channel/UCDhgRj9d2rL90GQTww4tXRQ" class="links-items">YouTube Music</a> -->
-        <a href="https://music.apple.com/us/artist/east-coast-monsters/1572547274" class="links-items-even">Apple Music</a>
-        <a href="https://soundcloud.com/ecm-624002976" class="links-items-odd">SoundCloud</a>
+        <a href="https://music.apple.com/us/artist/east-coast-monsters/1572547274" class="links-items-even col-1 col-s-1">Apple Music</a>
+        <a href="https://soundcloud.com/ecm-624002976" class="links-items-odd col-1 col-s-1">SoundCloud</a>
 
-        <a href="https://facebook.com/ecmonstersma" class="links-items-even">Facebook</a>
-        <a href="https://www.instagram.com/east.coast.monsters/" class="links-items-odd">Instagram</a>
+        <a href="https://facebook.com/ecmonstersma" class="links-items-even col-1 col-s-1">Facebook</a>
+        <a href="https://www.instagram.com/east.coast.monsters/" class="links-items-odd col-1 col-s-1">Instagram</a>
 
     </div>
         <div class="icons">
@@ -39,13 +41,13 @@
     <div class="links">
         <img class="header-img" src="assets/handwriting/4_monsters-blueweb-transparent-noquotes.png">
 
-        <a href="https://www.instagram.com/kingkombo2.0/" class="links-items-even">Kombo</a>
-        <a href="https://truefact.me" class="links-items-even">True Fact</a>
-        <a href="https://www.instagram.com/underbyteblc/" class="links-items-odd">UnderByte</a>
-        <a href="https://www.instagram.com/hhanchy/" class="links-items-even">HHancho</a>
-        <a href="https://www.instagram.com/soizzy7/" class="links-items-even">So Izzy</a>
-        <a href="https://www.instagram.com/beatsbyniro/" class="links-items-odd">NIRO Beats</a>
-        <a href="https://www.instagram.com/dutch_norris/" class="links-items-odd">Dutch Norris</a>
+        <a href="https://www.instagram.com/kingkombo2.0/" class="links-items-even col-1 col-s-1">Kombo</a>
+        <a href="https://truefact.me" class="links-items-even col-1 col-s-1">True Fact</a>
+        <a href="https://www.instagram.com/underbyteblc/" class="links-items-odd col-1 col-s-1">UnderByte</a>
+        <a href="https://www.instagram.com/hhanchy/" class="links-items-even col-1 col-s-1">HHancho</a>
+        <a href="https://www.instagram.com/soizzy7/" class="links-items-even col-1 col-s-1">So Izzy</a>
+        <a href="https://www.instagram.com/beatsbyniro/" class="links-items-odd col-1 col-s-1">NIRO Beats</a>
+        <a href="https://www.instagram.com/dutch_norris/" class="links-items-odd col-1 col-s-1">Dutch Norris</a>
     </div>
 
 
@@ -68,6 +70,11 @@
     @font-face {
         font-family: 'Links';
         src: url(assets/fonts/links/sedgwick-ave-display.regular.ttf);
+    }
+
+
+    * {
+        box-sizing: border-box;
     }
 
     body {
@@ -116,6 +123,20 @@
         max-width: 250px;
     }
 
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 80%;
+    }
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {width: 40%;}
+    }
+
+    @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .col-s-1 {width: 50%;}
+    }
+
     .links {
         padding-bottom: 25px;
     } .links-headers {
@@ -135,8 +156,8 @@
         margin-right: auto;
         padding: 20px;
         /* border: 5px solid rgb(0, 0, 0); */
-        max-width: 75%;
-        height: 30px;
+        /*max-width: 75%;*/
+        height: 70px;
         color: rgb(255, 255, 255);
         transition: 1500ms; 
         text-decoration: none;
@@ -154,8 +175,8 @@
         margin-right: auto;
         padding: 20px;
         /* border: 5px solid rgb(0, 0, 0); */
-        max-width: 75%;
-        height: 30px;
+        /*max-width: 75%;*/
+        height: 70px;
         color: rgb(255, 255, 255);
         transition: 1500ms; 
         text-decoration: none;
@@ -164,7 +185,7 @@
         background: rgb(0, 0, 0);
         /* background: radial-gradient(circle, rgba(19,71,60,1) 0%, rgba(94,119,114,1) 100%); */
         } .links-items-icon {
-        max-width: 25%;
+        /*max-width: 25%;*/
         max-height: 25%;
     } .links-items-odd:hover {
         transform: skewX(-10deg);
